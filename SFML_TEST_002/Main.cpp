@@ -10,8 +10,8 @@
 
 using namespace std;
 
-const int mapWidth = 15;  //powierzchnia
-Tile tile[mapWidth*mapWidth];
+const int mapWidth = 15;  
+Tile tile[mapWidth*mapWidth]; //powierzchnia
 void CalcMap()
 {
 	bool MapReady = false;
@@ -66,7 +66,7 @@ int main()
 			cout << rDraw << " ";
 		}
 	}
-	//Setup Player && Enemy (pro c++ logical signs)
+	//Setup Player && Enemy
 	Player player[1];
 	player[0].SetPos(64, 188);
 
