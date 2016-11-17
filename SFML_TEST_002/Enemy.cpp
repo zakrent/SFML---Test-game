@@ -15,5 +15,5 @@ void Enemy::attack(Player &player, double time)
 {
 	int distance = sqrt((abs(player.GetX() - this->GetX())*abs(player.GetX() - this->GetX())) + (abs(player.GetY() - this->GetY())*abs(player.GetY() - this->GetY())));
 	if (distance < 48) { player.DoDamage(10*time); }
-	//std::cout << distance <<" DMG:"<<10*time<< std::endl;
+	
 }

@@ -29,7 +29,7 @@ void Player::Move(int direction, double time, Tile tile[])
 			{
 				Player::SetY(Player::GetY() - (MovSpeed * time));
 			}
-			//std::cout << xTi << " Y:" << yTi <<" ID:"<< GetTileId(xTi, yTi)<<std::endl;
+			
 		break;
 
 		case(2):
@@ -43,7 +43,7 @@ void Player::Move(int direction, double time, Tile tile[])
 			{
 				Player::SetY(Player::GetY() + (MovSpeed * time));
 			}
-			//std::cout << xTi << " Y:" << yTi << " ID:" << GetTileId(xTi, yTi) << std::endl;
+			
 		break;
 
 		case(1):
@@ -57,7 +57,7 @@ void Player::Move(int direction, double time, Tile tile[])
 			{
 				Player::SetX(Player::GetX() + (MovSpeed * time));
 			}
-			//std::cout << xTi << " Y:" << yTi << " ID:" << GetTileId(xTi, yTi) << std::endl;
+			
 		break;
 
 		case(3):
@@ -71,7 +71,7 @@ void Player::Move(int direction, double time, Tile tile[])
 			{
 				Player::SetX(Player::GetX() - (MovSpeed * time));
 			}
-			//std::cout << xTi << " Y:" << yTi << " ID:" << GetTileId(xTi, yTi) << std::endl;
+			
 		break;
 	}
 
@@ -91,8 +91,3 @@ float Player::GetHealth()
 
 Player::Player() : Entity() { this->hp = 100; }
 Player::~Player(){}
-
-if (false)
-{
-	1=1
-}
